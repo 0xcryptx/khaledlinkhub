@@ -221,10 +221,21 @@
         .linkedin:hover:not(.clicked), .linkedin:active,
         .whatsapp:hover:not(.clicked), .whatsapp:active,
         .email:hover:not(.clicked), .email:active,
-        .call:hover:not(.clicked), .call:active {
+        .call:hover:not(.clicked), .call:active,
+        .save-contact:hover:not(.clicked), .save-contact:active {
             background: #333;
             color: white;
             border-color: #333;
+        }
+
+        .save-contact-wrapper {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .save-contact .icon svg {
+            transition: color 0.2s ease;
         }
 
         /* White logo hover effects for all buttons */
@@ -547,6 +558,20 @@
                 </a>
             </li>
         </ul>
+
+        <div class="save-contact-wrapper">
+            <a href="assets/Khaled-Khader.vcf" download="Khaled-Khader.vcf" class="link-button save-contact">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/>
+                        <circle cx="10" cy="7" r="4"/>
+                        <line x1="19" y1="8" x2="19" y2="14"/>
+                        <line x1="16" y1="11" x2="22" y2="11"/>
+                    </svg>
+                </span>
+                <span class="button-text">Save Contact</span>
+            </a>
+        </div>
 
     </div>
 
