@@ -1,6 +1,5 @@
+# Note: khaled.buildyourweb.ae is a temporary subdomain and may change later.
 User-agent: *
 Allow: /
 
-# Snapchat URL Preview Service (explicit allow)
-User-agent: Snap URL Preview Service
-Allow: /
+Sitemap: https://khaled.buildyourweb.ae/sitemap.xml
