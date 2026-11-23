@@ -227,16 +227,6 @@
             vertical-align: middle;
         }
 
-        .linkedin .icon img {
-            width: 38px;
-            height: 38px;
-            transform: translateX(-2px);
-        }
-
-        .whatsapp .icon img {
-            transform: translateX(3px);
-        }
-
         /* Unified black hover effect for all buttons */
         .linkedin:hover:not(.clicked), .linkedin:active,
         .whatsapp:hover:not(.clicked), .whatsapp:active,
@@ -254,29 +244,30 @@
             border-top: 1px solid #e0e0e0;
         }
 
-        .save-contact .icon svg {
-            transition: color 0.2s ease;
+        .save-contact:hover:not(.clicked) .icon img,
+        .save-contact:active .icon img {
+            content: url('assets/icons/save-contact-white.svg');
         }
 
         /* White logo hover effects for all buttons */
         .linkedin:hover:not(.clicked) .icon img,
         .linkedin:active .icon img {
-            content: url('assets/Linkedin logo white.png');
+            content: url('assets/icons/linkedin-white.svg');
         }
 
         .whatsapp:hover:not(.clicked) .icon img,
         .whatsapp:active .icon img {
-            content: url('assets/Whatsapp logo white.png');
+            content: url('assets/icons/whatsapp-white.svg');
         }
 
         .email:hover:not(.clicked) .icon img,
         .email:active .icon img {
-            content: url('assets/Mail logo white.png');
+            content: url('assets/icons/email-white.svg');
         }
 
         .call:hover:not(.clicked) .icon img,
         .call:active .icon img {
-            content: url('assets/Phone logo white.png');
+            content: url('assets/icons/phone-white.svg');
         }
 
         .footer {
@@ -356,46 +347,8 @@
                 vertical-align: middle;
             }
 
-            .linkedin .icon img {
-                width: 33px;
-                height: 33px;
-                transform: translateX(-2px);
-            }
-
             /* Mobile white logo hover effects */
-            .linkedin:hover:not(.clicked) .icon img,
-            .linkedin:active .icon img {
-                content: url('assets/Linkedin logo white.png');
-                width: 33px;
-                height: 33px;
-                transform: translateX(-2px);
-            }
 
-            .whatsapp .icon img {
-                transform: translateX(3px);
-            }
-
-            .whatsapp:hover:not(.clicked) .icon img,
-            .whatsapp:active .icon img {
-                content: url('assets/Whatsapp logo white.png');
-                width: 24px;
-                height: 24px;
-                transform: translateX(3px);
-            }
-
-            .email:hover:not(.clicked) .icon img,
-            .email:active .icon img {
-                content: url('assets/Mail logo white.png');
-                width: 24px;
-                height: 24px;
-            }
-
-            .call:hover:not(.clicked) .icon img,
-            .call:active .icon img {
-                content: url('assets/Phone logo white.png');
-                width: 24px;
-                height: 24px;
-            }
             
             .footer {
                 margin-top: 18px;
@@ -441,46 +394,8 @@
                 vertical-align: middle;
             }
 
-            .linkedin .icon img {
-                width: 31px;
-                height: 31px;
-                transform: translateX(-2px);
-            }
-
             /* Small screen white logo hover effects */
-            .linkedin:hover:not(.clicked) .icon img,
-            .linkedin:active .icon img {
-                content: url('assets/Linkedin logo white.png');
-                width: 31px;
-                height: 31px;
-                transform: translateX(-2px);
-            }
 
-            .whatsapp .icon img {
-                transform: translateX(3px);
-            }
-
-            .whatsapp:hover:not(.clicked) .icon img,
-            .whatsapp:active .icon img {
-                content: url('assets/Whatsapp logo white.png');
-                width: 22px;
-                height: 22px;
-                transform: translateX(3px);
-            }
-
-            .email:hover:not(.clicked) .icon img,
-            .email:active .icon img {
-                content: url('assets/Mail logo white.png');
-                width: 22px;
-                height: 22px;
-            }
-
-            .call:hover:not(.clicked) .icon img,
-            .call:active .icon img {
-                content: url('assets/Phone logo white.png');
-                width: 22px;
-                height: 22px;
-            }
         }
 
         /* Landscape orientation on mobile */
@@ -552,28 +467,28 @@
         <ul class="links">
             <li class="link-item">
                 <a href="https://www.linkedin.com/in/khaled-khaderr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="link-button linkedin" target="_blank">
-                    <span class="icon"><img src="assets/linkedin logo.png" alt="LinkedIn"></span>
+                    <span class="icon"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></span>
                     <span class="button-text">LinkedIn</span>
                 </a>
             </li>
             
             <li class="link-item">
                 <a href="https://wa.me/971501714640" class="link-button whatsapp" target="_blank">
-                    <span class="icon"><img src="assets/Whatsapp logo.png" alt="WhatsApp"></span>
+                    <span class="icon"><img src="assets/icons/whatsapp.svg" alt="WhatsApp"></span>
                     <span class="button-text">WhatsApp</span>
                 </a>
             </li>
             
             <li class="link-item">
                 <a href="mailto:imkhaledkhader@gmail.com" class="link-button email">
-                    <span class="icon"><img src="assets/Mail logo.png" alt="Email"></span>
+                    <span class="icon"><img src="assets/icons/email.svg" alt="Email"></span>
                     <span class="button-text">Email</span>
                 </a>
             </li>
             
             <li class="link-item">
                 <a href="tel:+971501714640" class="link-button call">
-                    <span class="icon"><img src="assets/Phone logo.png" alt="Call"></span>
+                    <span class="icon"><img src="assets/icons/phone.svg" alt="Call"></span>
                     <span class="button-text">Call</span>
                 </a>
             </li>
@@ -581,14 +496,7 @@
 
         <div class="save-contact-wrapper">
             <a href="assets/Khaled-Khader.vcf" download="Khaled-Khader.vcf" class="link-button save-contact">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/>
-                        <circle cx="10" cy="7" r="4"/>
-                        <line x1="19" y1="8" x2="19" y2="14"/>
-                        <line x1="16" y1="11" x2="22" y2="11"/>
-                    </svg>
-                </span>
+                <span class="icon"><img src="assets/icons/save-contact.svg" alt="Save Contact"></span>
                 <span class="button-text">Save Contact</span>
             </a>
         </div>
